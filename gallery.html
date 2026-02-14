@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Galería de Imágenes</title>
+    <style>
+        body { font-family: Arial; margin: 20px; background: #f0f0f0; }
+        .gallery { display: flex; flex-wrap: wrap; gap: 10px; }
+        .gallery img { width: 200px; height: 150px; object-fit: cover; cursor: pointer; }
+        .image-section { margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <h1>Galería de Fotos</h1>
+    
+    <div class="image-section">
+        <h2>Naturaleza</h2>
+        <div class="gallery">
+            <img src="naturaleza1.jpg" onclick="alert('Imagen 1')">
+            <img src="naturaleza2.jpg">
+            <img src="naturaleza3.jpg">
+            <img src="naturaleza4.jpg">
+        </div>
+    </div>
+    
+    <div class="image-section">
+        <h3>Ciudades</h3>
+        <div class="gallery">
+            <img src="ciudad1.jpg">
+            <img src="ciudad2.jpg">
+            <img src="ciudad3.jpg">
+        </div>
+    </div>
+    
+    <div class="image-section">
+        <h3>Comida</h3>
+        <div>
+            <img src="comida1.jpg" width="150">
+            <img src="comida2.jpg" width="150">
+            <img src="comida3.jpg" width="150">
+            <img src="comida4.jpg" width="150">
+        </div>
+    </div>
+    
+    <div>
+        <button onclick="location.href='index.html'">Volver al Inicio</button>
+        <button>Descargar Todas</button>
+    </div>
+    
+    <h4>Enlaces Relacionados</h4>
+    <a href="#">Ver más fotos</a> | 
+    <a href="#">Subir foto</a> | 
+    <a href="#">Compartir</a>
+</body>
+</html>
