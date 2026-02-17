@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas de Datos - Información Accesible</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Enlace de saltar al contenido principal -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    
+    <!-- Encabezado del sitio -->
+    <header>
+        <h1>Tablas de Información</h1>
+        
+        <!-- Navegación principal -->
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="form-page.html">Formularios</a></li>
+                <li><a href="data-table.html" aria-current="page">Tablas</a></li>
+                <li><a href="gallery.html">Galería</a></li>
+                <li><a href="content.html">Contenido</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Contenido principal -->
+    <main id="main-content">
+        <!-- Tabla de empleados -->
+        <section>
+            <h2>Tabla de Empleados</h2>
+            <table>
+                <caption>Listado de empleados con información de puesto y salario</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Puesto</th>
+                        <th scope="col">Salario</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Juan Pérez</td>
+                        <td>Desarrollador</td>
+                        <td>$3000</td>
+                        <td>
+                            <button type="button" aria-label="Editar empleado Juan Pérez">Editar</button>
+                            <button type="button" class="secondary" aria-label="Eliminar empleado Juan Pérez">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>María García</td>
+                        <td>Diseñadora</td>
+                        <td>$2800</td>
+                        <td>
+                            <button type="button" aria-label="Editar empleado María García">Editar</button>
+                            <button type="button" class="secondary" aria-label="Eliminar empleado María García">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Pedro López</td>
+                        <td>Gerente</td>
+                        <td>$4500</td>
+                        <td>
+                            <button type="button" aria-label="Editar empleado Pedro López">Editar</button>
+                            <button type="button" class="secondary" aria-label="Eliminar empleado Pedro López">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <!-- Tabla de horarios -->
+        <section>
+            <h2>Horarios Semanales</h2>
+            <table>
+                <caption>Distribución de actividades por día y hora</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Hora</th>
+                        <th scope="col">Lunes</th>
+                        <th scope="col">Martes</th>
+                        <th scope="col">Miércoles</th>
+                        <th scope="col">Jueves</th>
+                        <th scope="col">Viernes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">9:00</th>
+                        <td>Reunión</td>
+                        <td>Desarrollo</td>
+                        <td>Desarrollo</td>
+                        <td>Testing</td>
+                        <td>Revisión</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11:00</th>
+                        <td>Desarrollo</td>
+                        <td>Desarrollo</td>
+                        <td>Reunión</td>
+                        <td>Desarrollo</td>
+                        <td>Desarrollo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">14:00</th>
+                        <td>Testing</td>
+                        <td>Documentación</td>
+                        <td>Desarrollo</td>
+                        <td>Reunión</td>
+                        <td>Planificación</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">16:00</th>
+                        <td>Desarrollo</td>
+                        <td>Testing</td>
+                        <td>Documentación</td>
+                        <td>Desarrollo</td>
+                        <td>Revisión Final</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <!-- Navegación -->
+        <section>
+            <h2>Volver</h2>
+            <nav aria-label="Navegación de retorno">
+                <a href="index.html" class="button">Volver al Inicio</a>
+            </nav>
+        </section>
+    </main>
+    
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Tablas Accesibles. Todos los derechos reservados.</p>
+        <p><a href="#main-content">Volver arriba</a></p>
+    </footer>
+</body>
+</html>

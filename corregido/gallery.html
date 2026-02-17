@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes - Fotos Accesibles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Enlace de saltar al contenido principal -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    
+    <!-- Encabezado del sitio -->
+    <header>
+        <h1>Galería de Fotos</h1>
+        
+        <!-- Navegación principal -->
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="form-page.html">Formularios</a></li>
+                <li><a href="data-table.html">Tablas</a></li>
+                <li><a href="gallery.html" aria-current="page">Galería</a></li>
+                <li><a href="content.html">Contenido</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Contenido principal -->
+    <main id="main-content">
+        <!-- Sección de naturaleza -->
+        <section>
+            <h2>Naturaleza</h2>
+            <div class="gallery" role="list" aria-label="Galería de imágenes de naturaleza">
+                <div class="gallery-item" role="listitem">
+                    <a href="naturaleza1.jpg" aria-label="Ver imagen ampliada: Bosque de pinos al amanecer">
+                        <img 
+                            src="naturaleza1.jpg" 
+                            alt="Bosque de pinos al amanecer con rayos de sol atravesando las ramas" 
+                            class="img-gallery">
+                    </a>
+                </div>
+                <div class="gallery-item" role="listitem">
+                    <a href="naturaleza2.jpg" aria-label="Ver imagen ampliada: Cascada en montaña">
+                        <img 
+                            src="naturaleza2.jpg" 
+                            alt="Cascada de agua cristalina cayendo entre rocas en una montaña verde" 
+                            class="img-gallery">
+                    </a>
+                </div>
+                <div class="gallery-item" role="listitem">
+                    <a href="naturaleza3.jpg" aria-label="Ver imagen ampliada: Lago con reflexión de montañas">
+                        <img 
+                            src="naturaleza3.jpg" 
+                            alt="Lago tranquilo con reflexión perfecta de montañas nevadas al atardecer" 
+                            class="img-gallery">
+                    </a>
+                </div>
+                <div class="gallery-item" role="listitem">
+                    <a href="naturaleza4.jpg" aria-label="Ver imagen ampliada: Campo de flores silvestres">
+                        <img 
+                            src="naturaleza4.jpg" 
+                            alt="Campo extenso de flores silvestres amarillas y rojas bajo cielo azul" 
+                            class="img-gallery">
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección de ciudades -->
+        <section>
+            <h2>Ciudades</h2>
+            <div class="gallery" role="list" aria-label="Galería de imágenes de ciudades">
+                <div class="gallery-item" role="listitem">
+                    <a href="ciudad1.jpg" aria-label="Ver imagen ampliada: Rascacielos al atardecer">
+                        <img 
+                            src="ciudad1.jpg" 
+                            alt="Vista de rascacielos modernos iluminados durante la hora dorada del atardecer" 
+                            class="img-gallery">
+                    </a>
+                </div>
+                <div class="gallery-item" role="listitem">
+                    <a href="ciudad2.jpg" aria-label="Ver imagen ampliada: Calle histórica europea">
+                        <img 
+                            src="ciudad2.jpg" 
+                            alt="Calle empedrada histórica con edificios antiguos y cafés al aire libre" 
+                            class="img-gallery">
+                    </a>
+                </div>
+                <div class="gallery-item" role="listitem">
+                    <a href="ciudad3.jpg" aria-label="Ver imagen ampliada: Puente urbano de noche">
+                        <img 
+                            src="ciudad3.jpg" 
+                            alt="Puente urbano iluminado por la noche con reflejo en el río" 
+                            class="img-gallery">
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Botones de acción -->
+        <section>
+            <h2>Acciones</h2>
+            <nav aria-label="Acciones de galería">
+                <a href="index.html" class="button">Volver al Inicio</a>
+                <button type="button">Descargar Todas</button>
+            </nav>
+        </section>
+        
+        <!-- Enlaces relacionados -->
+        <section>
+            <h2>Enlaces Relacionados</h2>
+            <nav aria-label="Enlaces relacionados">
+                <ul>
+                    <li><a href="#mas-fotos">Ver más fotos</a></li>
+                    <li><a href="#subir">Subir foto</a></li>
+                    <li><a href="#compartir">Compartir galería</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+    
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Galería Accesible. Todos los derechos reservados.</p>
+        <p><a href="#main-content">Volver arriba</a></p>
+    </footer>
+</body>
+</html>

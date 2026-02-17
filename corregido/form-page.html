@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios - Ejemplos Accesibles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Enlace de saltar al contenido principal -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    
+    <!-- Encabezado del sitio -->
+    <header>
+        <h1>Página de Formularios</h1>
+        
+        <!-- Navegación principal -->
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="form-page.html" aria-current="page">Formularios</a></li>
+                <li><a href="data-table.html">Tablas</a></li>
+                <li><a href="gallery.html">Galería</a></li>
+                <li><a href="content.html">Contenido</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Contenido principal -->
+    <main id="main-content">
+        <!-- Formulario de Registro -->
+        <section class="form-container">
+            <h2>Formulario de Registro</h2>
+            <form action="#" method="post" novalidate>
+                <div class="form-group">
+                    <label for="reg-name">
+                        Nombre <span class="required" aria-label="obligatorio">*</span>
+                    </label>
+                    <input 
+                        type="text" 
+                        id="reg-name" 
+                        name="name" 
+                        required 
+                        aria-required="true"
+                        aria-describedby="reg-name-help">
+                    <span id="reg-name-help" class="form-help">Ingrese su nombre completo</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="reg-email">
+                        Email <span class="required" aria-label="obligatorio">*</span>
+                    </label>
+                    <input 
+                        type="email" 
+                        id="reg-email" 
+                        name="email" 
+                        required 
+                        aria-required="true"
+                        aria-describedby="reg-email-help">
+                    <span id="reg-email-help" class="form-help">Usaremos este email para contactarle</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="reg-password">
+                        Contraseña <span class="required" aria-label="obligatorio">*</span>
+                    </label>
+                    <input 
+                        type="password" 
+                        id="reg-password" 
+                        name="password" 
+                        required 
+                        aria-required="true"
+                        aria-describedby="reg-password-help">
+                    <span id="reg-password-help" class="form-help">Mínimo 8 caracteres</span>
+                </div>
+                
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input 
+                            type="checkbox" 
+                            id="reg-terms" 
+                            name="terms" 
+                            required
+                            aria-required="true"
+                            aria-describedby="reg-terms-help">
+                        Acepto los términos y condiciones <span class="required" aria-label="obligatorio">*</span>
+                    </label>
+                    <span id="reg-terms-help" class="form-help">Debe aceptar para continuar</span>
+                </div>
+                
+                <button type="submit">Enviar Registro</button>
+            </form>
+        </section>
+        
+        <!-- Formulario de Contacto -->
+        <section class="form-container">
+            <h2>Formulario de Contacto</h2>
+            <form action="#" method="post" novalidate>
+                <div class="form-group">
+                    <label for="contact-name">
+                        Nombre <span class="required" aria-label="obligatorio">*</span>
+                    </label>
+                    <input 
+                        type="text" 
+                        id="contact-name" 
+                        name="name" 
+                        placeholder="Ingrese su nombre"
+                        required 
+                        aria-required="true">
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact-phone">
+                        Teléfono
+                    </label>
+                    <input 
+                        type="tel" 
+                        id="contact-phone" 
+                        name="phone" 
+                        placeholder="Ingrese su teléfono"
+                        aria-describedby="contact-phone-help">
+                    <span id="contact-phone-help" class="form-help">Opcional - formato: +34 XXX XXX XXX</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact-subject">
+                        Asunto <span class="required" aria-label="obligatorio">*</span>
+                    </label>
+                    <select 
+                        id="contact-subject" 
+                        name="subject" 
+                        required 
+                        aria-required="true">
+                        <option value="">Seleccione una opción</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="reclamo">Reclamo</option>
+                        <option value="sugerencia">Sugerencia</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact-message">
+                        Mensaje <span class="required" aria-label="obligatorio">*</span>
+                    </label>
+                    <textarea 
+                        id="contact-message" 
+                        name="message" 
+                        rows="6" 
+                        required 
+                        aria-required="true"
+                        aria-describedby="contact-message-help"></textarea>
+                    <span id="contact-message-help" class="form-help">Describa su consulta o comentario</span>
+                </div>
+                
+                <fieldset class="form-group">
+                    <legend>Nivel de urgencia <span class="required" aria-label="obligatorio">*</span></legend>
+                    <label class="radio-label">
+                        <input 
+                            type="radio" 
+                            id="urgency-normal" 
+                            name="urgency" 
+                            value="normal" 
+                            required
+                            aria-required="true">
+                        Normal
+                    </label>
+                    <label class="radio-label">
+                        <input 
+                            type="radio" 
+                            id="urgency-urgent" 
+                            name="urgency" 
+                            value="urgent"
+                            required
+                            aria-required="true">
+                        Urgente
+                    </label>
+                </fieldset>
+                
+                <div>
+                    <button type="submit">Enviar Mensaje</button>
+                    <button type="button" class="secondary">Cancelar</button>
+                </div>
+            </form>
+        </section>
+        
+        <!-- Botones de navegación -->
+        <section>
+            <h2>Navegación</h2>
+            <nav aria-label="Navegación de página">
+                <button type="button" onclick="history.back()">Volver</button>
+                <button type="button" onclick="location.reload()">Recargar</button>
+            </nav>
+        </section>
+    </main>
+    
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Formularios Accesibles. Todos los derechos reservados.</p>
+        <p><a href="#main-content">Volver arriba</a></p>
+    </footer>
+</body>
+</html>

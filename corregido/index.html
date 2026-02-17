@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal - Sitio Accesible</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Enlace de saltar al contenido principal -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    
+    <!-- Encabezado del sitio -->
+    <header>
+        <h1>Bienvenido a Nuestro Sitio</h1>
+        
+        <!-- Navegación principal -->
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html" aria-current="page">Inicio</a></li>
+                <li><a href="form-page.html">Formularios</a></li>
+                <li><a href="data-table.html">Tablas</a></li>
+                <li><a href="gallery.html">Galería</a></li>
+                <li><a href="content.html">Contenido</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Contenido principal -->
+    <main id="main-content">
+        <section>
+            <h2>Inicio</h2>
+            <p>Este es el contenido principal de la página. Nuestro sitio está diseñado siguiendo las pautas de accesibilidad WCAG 2.2 nivel AA, garantizando una experiencia óptima para todos los usuarios.</p>
+            
+            <div>
+                <button type="button" onclick="alert('Botón clickeado')">Hacer Click</button>
+                <button type="button">Otro Botón</button>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Enlaces Importantes</h2>
+            <nav aria-label="Enlaces importantes">
+                <ul>
+                    <li><a href="#seccion1">Enlace a Sección 1</a></li>
+                    <li><a href="#seccion2">Enlace a Sección 2</a></li>
+                    <li><a href="#seccion3">Enlace a Sección 3</a></li>
+                </ul>
+            </nav>
+        </section>
+        
+        <section>
+            <h2>Imagen de Ejemplo</h2>
+            <img src="imagen1.jpg" alt="Descripción detallada de la imagen principal del sitio" class="img-small">
+        </section>
+    </main>
+    
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Sitio Accesible. Todos los derechos reservados.</p>
+        <p><a href="#main-content">Volver arriba</a></p>
+    </footer>
+</body>
+</html>

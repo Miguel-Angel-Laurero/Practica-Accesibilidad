@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido y Artículos - Blog de Tecnología</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Enlace de saltar al contenido principal -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    
+    <!-- Encabezado del sitio -->
+    <header>
+        <h1>Blog de Tecnología</h1>
+        
+        <!-- Navegación principal -->
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="form-page.html">Formularios</a></li>
+                <li><a href="data-table.html">Tablas</a></li>
+                <li><a href="gallery.html">Galería</a></li>
+                <li><a href="content.html" aria-current="page">Contenido</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Contenido principal -->
+    <main id="main-content">
+        <!-- Primer artículo -->
+        <article>
+            <h2>Introducción a la Programación</h2>
+            <p>La programación es una habilidad fundamental en el mundo moderno. En este artículo exploraremos los conceptos básicos y cómo empezar tu camino en el desarrollo de software.</p>
+            
+            <h3>¿Por qué aprender a programar?</h3>
+            <p>Existen múltiples razones para aprender programación en la actualidad. La demanda de desarrolladores es alta, las oportunidades son diversas y la capacidad de crear soluciones tecnológicas es cada vez más valiosa.</p>
+            
+            <div>
+                <button type="button">Leer más</button>
+                <button type="button">Compartir</button>
+            </div>
+        </article>
+        
+        <!-- Segundo artículo -->
+        <article>
+            <h2>Desarrollo Web en 2026</h2>
+            <p>El desarrollo web ha evolucionado significativamente. Veamos las principales tendencias y tecnologías que están definiendo el futuro de la web.</p>
+            
+            <h3>Frameworks populares</h3>
+            <ul>
+                <li>React - Biblioteca de JavaScript para construir interfaces de usuario</li>
+                <li>Vue - Framework progresivo para aplicaciones web</li>
+                <li>Angular - Plataforma completa para aplicaciones empresariales</li>
+            </ul>
+            
+            <h3>Herramientas esenciales</h3>
+            <ol>
+                <li>Editor de código - Visual Studio Code, Sublime Text o similar</li>
+                <li>Control de versiones - Git y GitHub para gestión de código</li>
+                <li>Terminal - Línea de comandos para automatización</li>
+            </ol>
+            
+            <p><a href="#tutorial">Ver tutorial completo</a></p>
+        </article>
+        
+        <!-- Barra lateral con artículos relacionados -->
+        <aside aria-label="Artículos relacionados">
+            <h2>Artículos Relacionados</h2>
+            <nav aria-label="Navegación de artículos relacionados">
+                <ul>
+                    <li><a href="#javascript">Guía de JavaScript</a></li>
+                    <li><a href="#css">CSS Avanzado</a></li>
+                    <li><a href="#html5">HTML5 Moderno</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <!-- Sección de contacto -->
+        <section>
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="contact-name">Tu nombre <span class="required" aria-label="obligatorio">*</span></label>
+                    <input type="text" id="contact-name" name="name" required aria-required="true">
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact-email">Email <span class="required" aria-label="obligatorio">*</span></label>
+                    <input type="email" id="contact-email" name="email" required aria-required="true">
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact-comment">Comentario <span class="required" aria-label="obligatorio">*</span></label>
+                    <textarea id="contact-comment" name="comment" required aria-required="true"></textarea>
+                </div>
+                
+                <button type="submit">Enviar Comentario</button>
+            </form>
+        </section>
+        
+        <section>
+            <h2>Banner Promocional</h2>
+            <img src="banner.jpg" alt="Banner promocional de nuestros cursos de desarrollo web 2026" class="img-large">
+        </section>
+    </main>
+    
+    <!-- Pie de página -->
+    <footer>
+        <nav aria-label="Enlaces del pie de página">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2026 Blog de Tecnología. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
